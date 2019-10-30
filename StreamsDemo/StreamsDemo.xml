@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StreamsDemo</name>
+    </assembly>
+    <members>
+        <member name="T:StreamsDemo.StreamsExtension">
+            <summary>
+            .
+            </summary>
+        </member>
+        <member name="M:StreamsDemo.StreamsExtension.ByByteCopy(System.String,System.String)">
+            <summary>
+            Implement by byte copy logic using class FileStream as a backing store stream .
+            </summary>
+            <param name="sourcePath">sourcePath.</param>
+            <param name="destinationPath">destinationPath.</param>
+            <returns>Amount Of Bytes.</returns>
+        </member>
+        <member name="M:StreamsDemo.StreamsExtension.InMemoryByByteCopy(System.String,System.String)">
+            <summary>
+            Implement by byte copy logic using class MemoryStream as a backing store stream.
+            </summary>
+            <param name="sourcePath">sourcePath.</param>
+            <param name="destinationPath">destinationPath.</param>
+            <returns>Amount Of Bytes.</returns>
+        </member>
+        <member name="M:StreamsDemo.StreamsExtension.ByBlockCopy(System.String,System.String)">
+            <summary>
+            Implement by block copy logic using FileStream buffer.
+            </summary>
+            <param name="sourcePath">sourcePath.</param>
+            <param name="destinationPath">destinationPath.</param>
+            <returns>Amount Of Bytes.</returns>
+        </member>
+        <member name="M:StreamsDemo.StreamsExtension.InMemoryByBlockCopy(System.String,System.String)">
+            <summary>
+            Implement by block copy logic using MemoryStream.
+            </summary>
+            <param name="sourcePath">sourcePath.</param>
+            <param name="destinationPath">destinationPath.</param>
+            <returns>New File Lenght.</returns>
+        </member>
+        <member name="M:StreamsDemo.StreamsExtension.BufferedCopy(System.String,System.String)">
+            <summary>
+            Implement by block copy logic using class-decorator BufferedStream.
+            </summary>
+            <param name="sourcePath">sourcePath.</param>
+            <param name="destinationPath">destinationPath.</param>
+            <returns>Amount Of Bytes.</returns>
+        </member>
+        <member name="M:StreamsDemo.StreamsExtension.ByLineCopy(System.String,System.String)">
+            <summary>
+            Implement by line copy logic using FileStream and classes text-adapters StreamReader/StreamWriter.
+            </summary>
+            <param name="sourcePath">sourcePath.</param>
+            <param name="destinationPath">destinationPath.</param>
+            <returns>Amount Of Bytes.</returns>
+        </member>
+        <member name="M:StreamsDemo.StreamsExtension.IsContentEquals(System.String,System.String)">
+            <summary>
+            Implement content comparison logic of two files.
+            </summary>
+            <param name="sourcePath">sourcePath.</param>
+            <param name="destinationPath">destinationPath.</param>
+            <returns>True if contents equals. False if doesn't.</returns>
+        </member>
+    </members>
+</doc>
